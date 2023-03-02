@@ -51,6 +51,7 @@ Este é um projeto fullstack que busca reproduzir as  funcionalidades de um sist
     - EXPRESS
     - JWT TOKEN 
     - BCRYPT
+    - ESLINT/ PRETTIER
     
 
 ___
