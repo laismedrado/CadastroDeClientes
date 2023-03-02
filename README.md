@@ -45,6 +45,7 @@
     - EXPRESS
     - JWT TOKEN 
     - BCRYPT
+    - REGEX
     
 
 ___
