@@ -4,8 +4,8 @@
 </div>
 
   ___
- <h3 align = "center"> Projeto pessoal Fullstack de  Formulário de cadastro de clientes para uma loja. (Node.js / React.js).
- </h3>
+ <h2 align = "center"> Projeto pessoal Fullstack de  Formulário de cadastro de clientes para uma loja. (Node.js / React.js).
+ </h2>
 
 <br/>
 
