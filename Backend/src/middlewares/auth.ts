@@ -1,5 +1,5 @@
-import { NextFunction, request, Request, Response } from "express";
-import { verify } from "jsonwebtoken";
+import { NextFunction, request, Request, Response } from 'express';
+import { verify } from 'jsonwebtoken';
 
 type TokenPayload = {
   id: string;
@@ -10,13 +10,13 @@ type TokenPayload = {
 export const authMiddlewares = async (
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) => {
   const { authorization } = req.headers;
   if (!authorization) {
-    return res.status(401).json({ error: "Token not provided" });
+    return res.status(401).json({ error: 'Token not provided' });
   }
-  const [, token] = authorization.split(" ");
+  const [, token] = authorization.split(' ');
 
   try {
     const decoded = verify(token, process.env.JWT_KEY as string);
@@ -24,6 +24,6 @@ export const authMiddlewares = async (
     request.userId = id;
     next();
   } catch (error) {
-    return res.status(401).json({ error: "Token invalid" });
+    return res.status(401).json({ error: 'Token invalid' });
   }
 };

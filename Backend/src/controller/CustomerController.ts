@@ -1,13 +1,13 @@
-import { Request, Response } from "express";
-import { validationResult } from "express-validator";
+import { Request, Response } from 'express';
+import { validationResult } from 'express-validator';
 import {
   createCustomerRegistration,
   deleteCustomer,
   getAllCustomerRegistration,
-} from "../services/CustomerService";
-import { Error as httpCodeError } from "../error/httpCodes";
-import { Sucess as httpCode } from "../error/httpCodes";
-import { messages } from "../error/messages";
+} from '../services/CustomerService';
+import { Error as httpCodeError } from '../error/httpCodes';
+import { Sucess as httpCode } from '../error/httpCodes';
+import { messages } from '../error/messages';
 
 export const CreateCustomerEndpoint = async (req: Request, res: Response) => {
   try {
@@ -40,9 +40,9 @@ export const deleteCustomerEndpoint = async (req: Request, res: Response) => {
   try {
     const id = req.params.id;
     await deleteCustomer(String(id));
-    return res.status(httpCode.OK).json(messages.delete("cliente"));
+    return res.status(httpCode.OK).json(messages.delete('cliente'));
   } catch (error: any) {
     console.log(error);
-    res.status(httpCodeError.BadRequest).json(messages.notDelete("cliente"));
+    res.status(httpCodeError.BadRequest).json(messages.notDelete('cliente'));
   }
 };

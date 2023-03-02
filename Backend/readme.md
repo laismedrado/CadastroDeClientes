@@ -10,6 +10,12 @@
 <br/>
 
 
+ ##   🚨 Sobre 
+</br>
+
+Este é um projeto fullstack que busca reproduzir as  funcionalidades de um sistema para o gerenciamento de cadastro de clientes, onde seus dados ficam guardados em uma base  de dados para futuras comunicações entre a loja e seus clientes, como: informações de descontos, novos produtos em estoque, promoções e etc;
+
+
 ## ✍🏻 Funcionalidades -  Backend
 
 <br/>
