@@ -5,6 +5,7 @@ export const messages = {
   invalid: (name: string) => `${name} inválido(a)`,
   unauthorized: (name: string) => `${name} não autorizado`,
   notDelete: (name: string) => `${name} não deletado`,
+  delete: (name: string) => `${name} deletado`,
   notEmpty: (name: string) => `${name}  não pode estar vazio`,
   recordCreated: (name: string) => `${name} criado com sucesso.`,
   recordNotCreated: (name: string) => `${name} não foi criado.`,

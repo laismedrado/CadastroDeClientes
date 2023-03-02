@@ -40,9 +40,9 @@ export const deleteCustomerEndpoint = async (req: Request, res: Response) => {
   try {
     const id = req.params.id;
     await deleteCustomer(String(id));
-    return res.status(httpCode.OK);
+    return res.status(httpCode.OK).json(messages.delete("cliente"));
   } catch (error: any) {
     console.log(error);
-    res.status(httpCodeError.BadRequest).json(messages.notDelete("Produto"));
+    res.status(httpCodeError.BadRequest).json(messages.notDelete("cliente"));
   }
 };

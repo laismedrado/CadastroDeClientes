@@ -1,1 +1,0 @@
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=cadastro%20de%20cliente&uri=)

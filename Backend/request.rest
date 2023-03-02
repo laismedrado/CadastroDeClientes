@@ -1,0 +1,40 @@
+###
+POST http://localhost:3000/admin/create
+Content-Type: application/json
+
+{
+	"email": "PauloJuanes@hotmail.com",
+	"name": "Paulo Juanes",
+	"password": "#Pui123433"
+}
+
+###
+POST http://localhost:3000/customer/create
+Content-Type: application/json
+
+{
+	"email":"valeria@silva.com", 
+	"name": " Valéria Silva",
+    "cpf": "89634626840"
+}
+
+###
+POST http://localhost:3000/admin/auth
+Content-Type: application/json
+
+{
+  "email": "PauloJuanes@hotmail.com",
+  "password": "#Pui123433"
+}
+
+###
+GET  http://localhost:3000/customer/registration 
+Authorization: jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE5YWRmZTA0LTExNWItNGFlMy05YmNmLTJhZjNhZmI0NjQzMSIsImlhdCI6MTY3Nzc2NjgxMSwiZXhwIjoxNjc3NzcwNDExfQ.GgJdtI-t7irCGAq1pA9vjBgnW9YV_-3Y9hKVCveBoPw
+Content-Type: application/json
+
+###
+DELETE  http://localhost:3000/customer/delete/1debe2e9-036b-4c33-b7ee-5237d5cfa708
+Content-Type: application/json
+
+
+
