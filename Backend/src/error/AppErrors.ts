@@ -1,4 +1,4 @@
-import { Error as httpCodeError } from "./httpCodes";
+import { Error as httpCodeError } from './httpCodes';
 
 export class AppError {
   public readonly message: string;

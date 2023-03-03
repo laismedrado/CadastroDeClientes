@@ -24,10 +24,10 @@ export const CreateCustomerEndpoint = async (req: Request, res: Response) => {
       name,
       cpf,
     });
-    return res.status(201).json(customerAccount);
+    return res.status(httpCode.Created).json(messages.recordCreated("Cliente"));
   } catch (error: any) {
     console.log(error); //pq o log do erro pode trazer mais pistas do erro no terminal
-    res.status(400).json(error.message);
+    res.status(httpCodeError.BadRequest).json(error.message);
   }
 };
 

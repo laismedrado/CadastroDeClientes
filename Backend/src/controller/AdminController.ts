@@ -17,7 +17,7 @@ export const CreateAdminEndpoint = async (req: Request, res: Response) => {
     return res.status(httpCode.Created).json('Administrador criado');
   } catch (error: any) {
     console.log(error);
-    res.status(httpCodeError.InternalServerError).json(error.message);
+    res.status(httpCodeError.BadRequest).json(error.message);
   }
 };
 

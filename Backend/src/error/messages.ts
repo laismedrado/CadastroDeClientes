@@ -7,8 +7,8 @@ export const messages = {
   notDelete: (name: string) => `${name} não deletado`,
   delete: (name: string) => `${name} deletado`,
   notEmpty: (name: string) => `${name}  não pode estar vazio`,
-  recordCreated: (name: string) => `${name} criado com sucesso.`,
-  recordNotCreated: (name: string) => `${name} não foi criado.`,
+  recordCreated: (name: string) => `${name} cadastrado com sucesso.`,
+  recordNotCreated: (name: string) => `${name} não foi cadastrado.`,
   sucessStatus: (name: string) => ` ${name} bem sucedida`,
   unsuccessful: (name: string) => ` ${name} mal sucedida`,
 };
